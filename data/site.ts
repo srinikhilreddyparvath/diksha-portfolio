@@ -1,0 +1,15 @@
+export const siteConfig = {
+  name: "Dr. Diksha Venugopal",
+  fullName: "Dr. Diksha Sunita Venugopal",
+  shortName: "Dr. Diksha Venugopal",
+  email: "dikshavenugopal@gmail.com",
+  emailHref: "mailto:dikshavenugopal@gmail.com",
+  phoneDisplay: "(617) 230-5828",
+  phoneHref: "tel:+16172305828",
+  linkedin: "https://www.linkedin.com/in/dr-diksha-venugopal-b29520133/",
+  calendly: "https://calendly.com/dikshavenugopal/talk-with-diksha",
+  cv: "/documents/Diksha_Sunita_Resume.pdf",
+  commencementVideoId: "c4gtNLoopl0",
+  commencementUrl: "https://youtu.be/c4gtNLoopl0",
+  location: "San Francisco Bay Area, California",
+} as const;
