@@ -472,7 +472,15 @@ a:focus-visible,button:focus-visible { outline:2px solid var(--clay); outline-of
 
 @media (max-width:800px) {
   .mobile-nav.is-open { max-height:780px; }
-  .header-contact { display:none; }
+  .nav-shell { height:94px; gap:.5rem; }
+  .brand-block { max-width:calc(100% - 52px); flex:1 1 auto; }
+  .wordmark { white-space:nowrap; }
+  .header-contact { display:flex; width:100%; max-width:240px; margin-top:.3rem; align-items:center; gap:.18rem .8rem; font-size:.6rem; line-height:1.35; }
+  .header-contact a { min-width:0; overflow-wrap:anywhere; }
+  .header-contact a:first-child { flex-basis:100%; }
+  .header-contact a:first-child::after { display:none; }
+  .menu-button { flex:0 0 44px; }
+  .hero { padding-top:124px; }
   .mobile-nav .resume-link { border-bottom:1px solid var(--rule); font-family:var(--font-editorial),serif; font-size:1.55rem; }
   .mobile-nav .nav-schedule { width:fit-content; margin-top:1rem; border:0; padding:0 1rem; font-family:var(--font-ui),sans-serif; font-size:.7rem; }
   .mobile-contact { display:flex; margin-top:1.2rem; padding-top:1rem; border-top:1px solid var(--rule); flex-direction:column; }
@@ -516,6 +524,8 @@ a:focus-visible,button:focus-visible { outline:2px solid var(--clay); outline-of
 }
 
 @media (max-width:520px) {
+  .wordmark { font-size:1.18rem; }
+  .header-contact { max-width:220px; }
   .career-mobile-content { padding-left:0; }
   .career-proof { grid-template-columns:1fr; }
   .practice-human { margin-top:4rem; padding-top:4rem; }
